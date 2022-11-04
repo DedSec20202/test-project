@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="header" id="home">
+        <div class="container">
+
+            <!-- Header Nav -->
+
+            <div class="header__nav">
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about_me" class="nav__link">About me</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <button class="nav__button" id="nav__button">
+                    <img src="./img/icons/nav-open.svg" alt="Nav button" id="nav__button__img">
+                </button>
+            </div>
+            
+            <!-- Header Content -->
+            
+            <div class="header__info">
+                <div class="header__info__name">
+                    Denis Novik
+                </div>
+                <div class="header__info__content">
+                    UX | UI designer 24 years old, Minsk
+                </div>
+                <div class="header__info__language">
+                    RU <span class="header__info__language__nav">| ENG</span>
+                </div>
+            </div>
+            
+            <!-- Header Image -->
+            
+            <div class="header__image">
+                <picture>
+                    <source media="(max-width: 799px)" srcset="./img/header/hero_mobile.png">
+                    <img src="./img/header/hero.png" alt="hero">
+                </picture>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- About ME -->
+
+    <div class="about_me" id="about_me">
+        <div class="container">
+            <h1>About me</h1>
+            <div class="about_me__content">
+                <p>
+                    Hi, I'm Denis – UX/UI designer from Minsk. <br>
+                    I'm interested in design and everything connected with it. <br><br>
+
+                    I'm studying at courses "Web and mobile design <br>
+                    interfaces" in IT-Academy. <br><br>
+
+                    Ready to implement excellent project <br>
+                     with wonderful people.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+
+    <div class="skills" id="skills">
+        <div class="container">
+            <div class="skills__text">
+                <h1>Skills</h1>
+                <h2>I work in such programs as</h2>
+            </div>
+            <div class="skills__cards">
+                <div class="skills__card" data-aos="fade-up">
+                    <div class="skills__img">
+                        <img src="./img/skills/ps.svg" alt="">
+                    </div>
+                    <p>Adobe Photoshop</p>
+                    <div class="skills__stars">
+                        <img src="./img/skills/stars-4-5.png" alt="">
+                    </div>
+                </div>
+                <div class="skills__card" data-aos="fade-up">
+                    <div class="skills__img">
+                        <img src="./img/skills/ai.svg" alt="">
+                    </div>
+                    <p>Adobe Illustrator</p>
+                    <div class="skills__stars">
+                        <img src="./img/skills/stars-3-5.png" alt="">
+                    </div>
+                </div>
+                <div class="skills__card" data-aos="fade-up">
+                    <div class="skills__img">
+                        <img src="./img/skills/ae.svg" alt="">
+                    </div>
+                    <p>Adobe After Effects</p>
+                    <div class="skills__stars">
+                        <img src="./img/skills/stars-4-5.png" alt="">
+                    </div>
+                </div>
+                <div class="skills__card" data-aos="fade-up">
+                    <div class="skills__img">
+                        <img src="./img/skills/figma.svg" alt="">
+                    </div>
+                    <p class="figma">Figma</p>
+                    <div class="skills__stars">
+                        <img src="./img/skills/stars-4-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="portfolio__title">
+                Portfolio
+            </h1>
+
+            <div class="portfolio__content" data-aos="fade-left">
+                <div class="portfolio__content__img">
+                    <img src="./img/portfolio/01.jpg" alt="">
+                </div>
+                <div class="portfolio__content__link">
+                    <a href="#!">Online fashion store - Homepage</a>
+                </div>
+            </div>
+            
+            <div class="portfolio__content" data-aos="fade-left">
+                <div class="portfolio__content__img">
+                    <img src="./img/portfolio/02.jpg" alt="">
+                </div>
+                <div class="portfolio__content__link">
+                    <a href="#!">Reebok Store - Concept</a>
+                </div>
+            </div>
+
+            <div class="portfolio__content" data-aos="fade-left">
+                <div class="portfolio__content__img">
+                    <img src="./img/portfolio/03.jpg" alt="">
+                </div>
+                <div class="portfolio__content__link">
+                    <a href="#!">Braun Landing Page - Concept</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacts -->
+
+    <footer class="contacts" id="contacts">
+        <div class="container" data-aos="fade-up">
+            <h1 class="contacts__title">Contacts</h1>
+            <p class="contacts__text">Want to know more or just chat? <br> You are welcome!</p>
+            <div class="contacts__button">
+                <a href="#!" class="button">Send message </a>
+            </div>
+            <div class="contacts__social">
+                <a href="#!"><img src="./img/socials/LinkedIn.svg" alt="LinkedIn"></a>
+                <a href="#!"><img src="./img/socials/Instagram.svg" alt="Instagram"></a>
+                <a href="#!"><img src="./img/socials/Bechance.svg" alt="Bechance"></a>
+                <a href="#!"><img src="./img/socials/Dribble.svg" alt="Dribble"></a>
+            </div>
+            <p class="contacts__footer">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
