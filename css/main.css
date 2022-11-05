@@ -53,6 +53,10 @@ body {
     color: #000000;
 }
 
+.header__nav__language {
+    display: none;
+}
+
 /* Header Content */
 
 .header__info {
