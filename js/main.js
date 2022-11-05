@@ -10,19 +10,28 @@ navButton.onclick = () => {
     }
 }
 
-AOS.init({
-    once: true
-});
-
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
-    anchor.addEventListener("click", function(event){
-        event.preventDefault();
-        const blockID = anchor.getAttribute('href')
-        document.querySelector('' + blockID).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        })
-    })
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+		
+		const goto = anchor.hasAttribute('href')
+			? anchor.getAttribute('href')
+			: 'body';
+		
+		document.querySelector(goto).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+		});
+		
+		if (nav.classList.contains('open')) {
+			nav.classList.remove('open');
+			navBtnImg.src = './img/icons/nav-open.svg';
+		}
+	});
 }
+
+AOS.init({
+    once: true
+});
