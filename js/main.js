@@ -27,7 +27,7 @@ for (let anchor of anchors) {
 		
 		if (nav.classList.contains('open')) {
 			nav.classList.remove('open');
-			navBtnImg.src = './img/icons/nav-open.svg';
+			navButtonImg.src = './img/icons/nav-open.svg';
 		}
 	});
 }
