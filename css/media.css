@@ -8,6 +8,20 @@
         margin-bottom: 0;
         padding-bottom: 0;
     }
+
+    .header__nav__language {
+        display: block;
+        position: fixed;
+        font-weight: 700;
+        color: #828282;
+        transform: rotate(90deg);
+        right: -2px;
+        bottom: 57px;
+    }
+
+    .header__nav__language__eng {
+        color: #000000;
+    }
     
     .header__info__language {
         display: none;
@@ -15,6 +29,10 @@
 
     .nav__button {
         display: block;
+        position: fixed;
+        z-index: 9;
+        top: 68px;
+        right: 30px;
     }
 
     .nav.open .nav__list {
@@ -43,13 +61,6 @@
         color: #090909;
     }
 
-    .nav__button {
-        position: fixed;
-        z-index: 9;
-        top: 66px;
-        right: 28px;
-    }
-
     .header__info {
         margin-top: 65px;
         flex-direction: column;
@@ -72,6 +83,11 @@
         margin-bottom: 27px;
     }
 
+    .contacts__social {
+        justify-content: center;
+        column-gap: none;
+    }
+
     .contacts__text {
         margin-bottom: 52px;
     }
@@ -81,7 +97,6 @@
     }
 
     .button {
-        padding: 12px 96px;
-        width: 100%;
+        padding: 12px 96px; 
     }
 }
